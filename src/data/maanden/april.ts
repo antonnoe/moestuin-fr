@@ -120,8 +120,9 @@ export const april: Maand = {
   },
   juridischDezeMaand: ['recuperation-eau-pluie'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=1800&q=80',
-    alt: 'Voorjaarsmoestuin met zaailingen en eerste sla',
-    credit: 'Unsplash',
+    hero: '/images/maanden/april.png',
+    alt: 'April in de Franse moestuin — botanische plaat met sla, rode biet, snijbiet, erwt en aardappel in het midden van het voorjaar',
+    credit: 'Plaat IV van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };

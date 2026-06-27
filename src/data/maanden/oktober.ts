@@ -112,8 +112,9 @@ export const oktober: Maand = {
   },
   juridischDezeMaand: ['compostage-agec'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1509223197845-458d87318791?w=1800&q=80',
-    alt: 'Pompoenen en herfstoogst',
-    credit: 'Unsplash',
+    hero: '/images/maanden/oktober.png',
+    alt: 'Oktober in de Franse moestuin — botanische plaat met knoflook, veldsla, boerenkool, spruitkool en knolselderij in de middenherfst',
+    credit: 'Plaat X van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };

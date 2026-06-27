@@ -108,8 +108,9 @@ export const maart: Maand = {
   },
   juridischDezeMaand: ['snoei-erfgrens'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=1800&q=80',
-    alt: 'Voorjaarsmoestuin met eerste zaailingen',
-    credit: 'Unsplash',
+    hero: '/images/maanden/maart.png',
+    alt: 'Maart in de Franse moestuin — botanische plaat met radijs, wortel, spinazie, erwt en aardappel in het vroege voorjaar',
+    credit: 'Plaat III van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };

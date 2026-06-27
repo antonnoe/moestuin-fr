@@ -76,8 +76,9 @@ export const december: Maand = {
   },
   juridischDezeMaand: ['compostage-agec'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=1800&q=80',
-    alt: 'Berijpte moestuin in december',
-    credit: 'Unsplash',
+    hero: '/images/maanden/december.png',
+    alt: 'December in de Franse moestuin — botanische plaat met winterprei, veldsla, boerenkool, spruitkool en witlof in de vroege winter',
+    credit: 'Plaat XII van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };

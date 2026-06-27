@@ -92,8 +92,9 @@ export const februari: Maand = {
   },
   juridischDezeMaand: ['snoei-erfgrens'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?w=1800&q=80',
-    alt: 'Eerste sneeuwklokjes in een Franse tuin in februari',
-    credit: 'Unsplash',
+    hero: '/images/maanden/februari.png',
+    alt: 'Februari in de Franse moestuin — botanische plaat met knoflook, sjalot, erwt, tuinboon en prei in late winter',
+    credit: 'Plaat II van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };

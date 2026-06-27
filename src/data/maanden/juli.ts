@@ -130,8 +130,9 @@ export const juli: Maand = {
   },
   juridischDezeMaand: ['restrictions-secheresse', 'recuperation-eau-pluie'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1574266065415-c6c12fdf6c8b?w=1800&q=80',
-    alt: 'Volle zomermoestuin met tomaten en courgettes',
-    credit: 'Unsplash',
+    hero: '/images/maanden/juli.png',
+    alt: 'Juli in de Franse moestuin — botanische plaat met tomaat, sperzieboon, wortel, courgette en komkommer in de hoogzomer',
+    credit: 'Plaat VII van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };

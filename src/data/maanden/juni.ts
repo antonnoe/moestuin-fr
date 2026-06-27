@@ -169,9 +169,10 @@ export const juni: Maand = {
     seizoensgroenten: ['cocos blancs', 'haricots verts', 'courgette', 'tomaat', 'wortel', 'basilicum'],
   },
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=1800&q=80',
-    alt: 'Rijpende tomaten aan de plant in een Franse moestuin',
-    credit: 'Unsplash',
+    hero: '/images/maanden/juni.png',
+    alt: 'Juni in de Franse moestuin — botanische plaat met tomaat, sperzieboon, wortel, courgette en komkommer in de vroege zomer',
+    credit: 'Plaat VI van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
   galerij: [
     {

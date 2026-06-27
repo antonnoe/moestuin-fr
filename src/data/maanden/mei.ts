@@ -137,8 +137,9 @@ export const mei: Maand = {
   },
   juridischDezeMaand: ['snoei-erfgrens'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1800&q=80',
-    alt: 'Volle voorjaarsmoestuin in mei',
-    credit: 'Unsplash',
+    hero: '/images/maanden/mei.png',
+    alt: 'Mei in de Franse moestuin — botanische plaat met tomaat, sperzieboon, sla, courgette en komkommer in de late lente',
+    credit: 'Plaat V van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };

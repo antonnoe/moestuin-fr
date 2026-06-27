@@ -96,8 +96,9 @@ export const november: Maand = {
   },
   juridischDezeMaand: ['snoei-erfgrens'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1635192300858-2c12d7d8a1ad?w=1800&q=80',
-    alt: 'Herfstige moestuin in november',
-    credit: 'Unsplash',
+    hero: '/images/maanden/november.png',
+    alt: 'November in de Franse moestuin — botanische plaat met pastinaak, winterpostelein, topinamboer, savooiekool en schorseneer in de late herfst',
+    credit: 'Plaat XI van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };

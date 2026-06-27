@@ -115,8 +115,9 @@ export const augustus: Maand = {
   },
   juridischDezeMaand: ['restrictions-secheresse'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=1800&q=80',
-    alt: 'Volle augustusmoestuin met tomaten en pompoenen',
-    credit: 'Unsplash',
+    hero: '/images/maanden/augustus.png',
+    alt: 'Augustus in de Franse moestuin — botanische plaat met aubergine, paprika, snijbiet, venkel en tomaat in de nazomer',
+    credit: 'Plaat VIII van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };

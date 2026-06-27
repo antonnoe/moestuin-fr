@@ -125,8 +125,9 @@ export const september: Maand = {
   },
   juridischDezeMaand: ['compostage-agec'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1571696494060-e7e85ce6c1c4?w=1800&q=80',
-    alt: 'Herfstmoestuin met pompoenen',
-    credit: 'Unsplash',
+    hero: '/images/maanden/september.png',
+    alt: 'September in de Franse moestuin — botanische plaat met veldsla, spinazie, andijvie, pompoen en prei in de vroege herfst',
+    credit: 'Plaat IX van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };
