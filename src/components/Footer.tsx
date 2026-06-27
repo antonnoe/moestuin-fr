@@ -20,6 +20,7 @@ export default function Footer() {
             <li><Link href="/varietes" className="no-underline text-ink hover:text-bordeaux">Variétés anciennes</Link></li>
             <li><Link href="/woordenlijst" className="no-underline text-ink hover:text-bordeaux">Woordenlijst</Link></li>
             <li><Link href="/over" className="no-underline text-ink hover:text-bordeaux">Over deze gids</Link></li>
+            <li><a href="https://infofrankrijk.com/wp-content/uploads/2026/06/Moestuin_Jaarkalender_2027_A3.pdf" target="_blank" rel="noopener" className="no-underline text-ink hover:text-bordeaux">Jaarkalender PDF (A3) ↓</a></li>
           </ul>
         </div>
         <div>

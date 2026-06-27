@@ -120,6 +120,36 @@ export default function Home() {
 
       <hr className="section-rule" />
 
+      {/* PDF Download */}
+      <section className="container-wide py-12">
+        <div className="bg-bordeaux-50 border border-bordeaux-100 rounded-sm p-8 md:p-10 grid md:grid-cols-[1fr_auto] gap-6 md:gap-10 items-center">
+          <div>
+            <div className="eyebrow mb-3">Voor aan de keukenmuur</div>
+            <h2 className="!mt-0 !mb-3">Jaarkalender 2027 — print en hang op</h2>
+            <p className="text-ink/80 !mb-0 max-w-2xl">
+              De volledige twaalfmaanden­kalender op A3-formaat: alle zaai-, plant-, oogst- en
+              onderhouds­momenten per klimaatzone, plus de seizoensrecepten. Eén oogopslag, in de
+              keuken of de schuur.
+            </p>
+          </div>
+          <a
+            href="https://infofrankrijk.com/wp-content/uploads/2026/06/Moestuin_Jaarkalender_2027_A3.pdf"
+            target="_blank"
+            rel="noopener"
+            className="btn-primary whitespace-nowrap inline-flex items-center gap-2"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download PDF (A3)
+          </a>
+        </div>
+      </section>
+
+      <hr className="section-rule" />
+
       {/* Naslag */}
       <section className="container-wide py-12">
         <div className="grid md:grid-cols-3 gap-6">
