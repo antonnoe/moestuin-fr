@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { MAANDEN, getMaandBySlug } from '@/data/maanden';
 import { JURIDISCH, getJuridischBySlug } from '@/data/juridisch';
 import { getVarieteBySlug } from '@/data/varietes';
+import { ZONES } from '@/data/zones';
 import MonthContent from '@/components/MonthContent';
 import LiveAlerts from '@/components/LiveAlerts';
 import ImageGallery from '@/components/ImageGallery';
@@ -132,17 +133,47 @@ export default async function MaandPagina({
         </div>
       </section>
 
-      {/* Recept */}
-      {maand.recept && (
-        <section className="container-narrow py-8">
-          <div className="card border-l-4 border-l-bordeaux">
-            <div className="eyebrow mb-2">Seizoensrecept</div>
-            <h3 className="!mt-0">{maand.recept.naam}</h3>
-            <p className="!mb-3">{maand.recept.intro}</p>
-            <div className="text-sm">
-              <strong className="font-display">Met:</strong>{' '}
-              <span className="text-ink/70">{maand.recept.seizoensgroenten.join(', ')}</span>
-            </div>
+      {/* Seizoensrecepten — per zone */}
+      {maand.recepten && maand.recepten.length > 0 && (
+        <section className="container-wide py-8">
+          <div className="eyebrow mb-4">Seizoensrecepten — Frankrijk in vijf klimaten</div>
+          <p className="text-sm text-ink/70 mb-6 max-w-2xl">
+            Wat uit de moestuin komt verschilt per streek, en wat ermee gekookt wordt ook. Eén recept
+            per klimaatzone — Bretagne pakt de zee, de Pyreneeën grijpen naar de schapenkaas, de
+            Provence stapelt het zomerblad op.
+          </p>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {maand.recepten.map((recept) => {
+              const zoneNamen = recept.zones
+                .map((zid) => ZONES[zid]?.naam ?? zid)
+                .join(' · ');
+              return (
+                <div
+                  key={recept.naam}
+                  className="card border-l-4 border-l-bordeaux flex flex-col"
+                >
+                  <div className="flex items-baseline justify-between gap-2 mb-1">
+                    <span
+                      className="text-xs uppercase tracking-wider font-semibold"
+                      style={{ color: 'rgba(128,0,0,0.85)' }}
+                    >
+                      {zoneNamen}
+                    </span>
+                    {recept.herkomst && (
+                      <span className="text-xs text-ink/55 italic">{recept.herkomst}</span>
+                    )}
+                  </div>
+                  <h3 className="!mt-0 !mb-2 text-lg">{recept.naam}</h3>
+                  <p className="!mb-3 text-sm leading-relaxed flex-1">{recept.intro}</p>
+                  <div className="text-xs pt-2 border-t border-ink/10">
+                    <strong className="font-display">Met:</strong>{' '}
+                    <span className="text-ink/70">
+                      {recept.seizoensgroenten.join(', ')}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
       )}

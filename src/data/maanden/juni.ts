@@ -162,12 +162,16 @@ export const juni: Maand = {
   },
   juridischDezeMaand: ['restrictions-secheresse', 'recuperation-eau-pluie'],
   varietesUitgelicht: ['tomate-coeur-de-boeuf', 'courgette-de-nice', 'sucrine-du-berry'],
-  recept: {
-    naam: 'Soupe au pistou',
-    intro:
-      'De Provençaalse zomerklassieker: groentesoep met verse witte en groene bonen, courgette, tomaat, en een lepel pistou (basilicum, knoflook, olijfolie, parmezaan) er bovenop. Pure juni-oogst in een kom.',
-    seizoensgroenten: ['cocos blancs', 'haricots verts', 'courgette', 'tomaat', 'wortel', 'basilicum'],
-  },
+  recepten: [
+    {
+      naam: 'Soupe au pistou',
+      herkomst: 'Provence',
+      intro:
+        'De Provençaalse zomerklassieker: groentesoep met verse witte en groene bonen, courgette, tomaat, en een lepel pistou (basilicum, knoflook, olijfolie, parmezaan) er bovenop. Pure juni-oogst in een kom — werkt in heel Zuid- en Centraal-Frankrijk waar de eerste warme tomaten en jonge bonen tegelijk binnenkomen.',
+      seizoensgroenten: ['cocos blancs', 'haricots verts', 'courgette', 'tomaat', 'wortel', 'basilicum'],
+      zones: ['mediterraneen', 'oceanique_alt', 'continental'],
+    },
+  ],
   afbeelding: {
     hero: '/images/maanden/juni.png',
     alt: 'Juni in de Franse moestuin — botanische plaat met tomaat, sperzieboon, wortel, courgette en komkommer in de vroege zomer',

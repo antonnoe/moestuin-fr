@@ -49,11 +49,7 @@ export interface Maand {
   zones: Record<ZoneId, ZoneInhoud>;
   juridischDezeMaand?: string[]; // slugs van juridisch-items
   varietesUitgelicht?: string[]; // slugs van variétés
-  recept?: {
-    naam: string;
-    intro: string;
-    seizoensgroenten: string[];
-  };
+  recepten?: Recept[];
   afbeelding: {
     hero: string;
     alt: string;
@@ -69,6 +65,17 @@ export interface GalerijFoto {
   alt: string;
   caption?: string;
   credit?: string;
+}
+
+export interface Recept {
+  naam: string;
+  /** Regionale herkomst, bv "Bretagne", "Provence", "Lorraine" */
+  herkomst?: string;
+  intro: string;
+  /** Hoofdingrediënten uit het seizoen (tuin + lokaal product) */
+  seizoensgroenten: string[];
+  /** Klimaatzones waar dit recept thuishoort */
+  zones: ZoneId[];
 }
 
 // Juridisch item
