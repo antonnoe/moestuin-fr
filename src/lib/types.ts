@@ -58,6 +58,8 @@ export interface Maand {
     hero: string;
     alt: string;
     credit?: string;
+    /** 'hero' = bijgesneden met overlay-tekst (default). 'plaat' = volledige afbeelding tonen, geen overlay (voor Vilmorin-stijl maandplaten die titel en ondertitel al bevatten). */
+    style?: 'hero' | 'plaat';
   };
   galerij?: GalerijFoto[];
 }

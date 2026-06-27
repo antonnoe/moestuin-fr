@@ -7,7 +7,7 @@ import { ZONES, DEPARTEMENTEN, getZoneByDepartement } from '@/data/zones';
 import type { ZoneId } from '@/lib/types';
 
 const DEPT_GEOJSON_URL =
-  'https://france-geojson.gregoiredavid.fr/repo/departements.geojson';
+  'https://cdn.jsdelivr.net/gh/gregoiredavid/france-geojson@master/departements-version-simplifiee.geojson';
 
 interface ClimateMapProps {
   onZoneSelect?: (zone: ZoneId, departementCode: string, departementNaam: string) => void;

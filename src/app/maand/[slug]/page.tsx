@@ -49,34 +49,58 @@ export default async function MaandPagina({
   const varieteItems =
     maand.varietesUitgelicht?.map((s) => getVarieteBySlug(s)).filter(Boolean) ?? [];
 
+  const isPlaat = maand.afbeelding.style === 'plaat';
+
   return (
     <>
-      {/* Hero met grote afbeelding */}
-      <section className="relative h-[60vh] min-h-[400px] max-h-[600px] overflow-hidden">
-        <Image
-          src={maand.afbeelding.hero}
-          alt={maand.afbeelding.alt}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-        <div className="absolute inset-0 flex items-end">
-          <div className="container-wide pb-12 text-white">
-            <div className="text-xs tracking-[0.3em] uppercase opacity-80 mb-3">
-              Maand {String(maand.nummer).padStart(2, '0')} · jaarkalender
+      {/* Hero — verschilt tussen 'hero' (default, bijgesneden + overlay) en 'plaat' (volledig, geen overlay) */}
+      {isPlaat ? (
+        <section className="bg-cream pt-8 pb-4">
+          <div className="container-wide">
+            <div className="relative w-full max-w-6xl mx-auto" style={{ aspectRatio: '1672 / 941' }}>
+              <Image
+                src={maand.afbeelding.hero}
+                alt={maand.afbeelding.alt}
+                fill
+                priority
+                className="object-contain"
+                sizes="(max-width: 1200px) 100vw, 1200px"
+              />
             </div>
-            <h1 className="!text-white !mb-3">{maand.naam}</h1>
-            <p className="text-xl latin opacity-90 max-w-2xl">{maand.ondertitel}</p>
+            {maand.afbeelding.credit && (
+              <div className="text-center text-xs text-ink/50 italic mt-3 latin">
+                {maand.afbeelding.credit}
+              </div>
+            )}
           </div>
-        </div>
-        {maand.afbeelding.credit && (
-          <div className="absolute bottom-2 right-3 text-[10px] text-white/60">
-            foto: {maand.afbeelding.credit}
+        </section>
+      ) : (
+        <section className="relative h-[60vh] min-h-[400px] max-h-[600px] overflow-hidden">
+          <Image
+            src={maand.afbeelding.hero}
+            alt={maand.afbeelding.alt}
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+          <div className="absolute inset-0 flex items-end">
+            <div className="container-wide pb-12 text-white">
+              <div className="text-xs tracking-[0.3em] uppercase opacity-80 mb-3">
+                Maand {String(maand.nummer).padStart(2, '0')} · jaarkalender
+              </div>
+              <h1 className="!text-white !mb-3">{maand.naam}</h1>
+              <p className="text-xl latin opacity-90 max-w-2xl">{maand.ondertitel}</p>
+            </div>
           </div>
-        )}
-      </section>
+          {maand.afbeelding.credit && (
+            <div className="absolute bottom-2 right-3 text-[10px] text-white/60">
+              foto: {maand.afbeelding.credit}
+            </div>
+          )}
+        </section>
+      )}
 
       {/* Intro */}
       <section className="container-narrow py-12">

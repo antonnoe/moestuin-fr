@@ -108,8 +108,9 @@ export const januari: Maand = {
   },
   juridischDezeMaand: ['compostage-agec'],
   afbeelding: {
-    hero: 'https://images.unsplash.com/photo-1486075074814-43c0d9091dd5?w=1800&q=80',
-    alt: 'Berijpte moestuin in januari',
-    credit: 'Unsplash',
+    hero: '/images/maanden/januari.png',
+    alt: 'Januari in de Franse moestuin — botanische plaat met prei, veldsla, winterspinazie, spruitkool en artisjok',
+    credit: 'Plaat I van XII — De maandelijkse moestuin',
+    style: 'plaat',
   },
 };
