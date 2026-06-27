@@ -164,12 +164,44 @@ export const juni: Maand = {
   varietesUitgelicht: ['tomate-coeur-de-boeuf', 'courgette-de-nice', 'sucrine-du-berry'],
   recepten: [
     {
+      naam: 'Artichauts vinaigrette',
+      herkomst: 'Bretagne',
+      intro:
+        'De Camus de Bretagne — driekwart van de Franse artisjok-productie — is in juni op zijn best. De klassieke Bretonse manier: kort in gezouten water gekookt, lauw of koud opgediend met een vinaigrette van sjalot, mosterd en notenolie. Blad voor blad het bodempje door de saus halen, en uiteindelijk het fond als beloning.',
+      seizoensgroenten: ['artisjok', 'sjalot', 'peterselie', 'walnotenolie'],
+      zones: ['oceanique'],
+    },
+    {
+      naam: 'Tarte aux fraises',
+      herkomst: 'Loire-vallei',
+      intro:
+        'Een korstdeegbodem, een dunne laag crème pâtissière, en daar bovenop de laatste Gariguette- of Mara-des-Bois-aardbeien van het seizoen, glanzend van een lichte geleiglans. Eenvoudig in opzet, lastig in uitvoering: de bodem moet kort en bros zijn, de crème koel, de aardbeien op het laatste moment. Loire-klassieker, juni-signature.',
+      seizoensgroenten: ['aardbei (Gariguette, Mara des Bois)', 'ei', 'melk', 'boter'],
+      zones: ['oceanique_alt'],
+    },
+    {
+      naam: 'Asperges blanches, sauce mousseline',
+      herkomst: 'Alsace',
+      intro:
+        'Het asperge-seizoen sluit op 24 juni — de Saint-Jean. Voor die datum nog één keer de witte asperges van de Alsace of Champagne: dik geschild, kort gekookt in licht gezouten water met een snufje suiker, en geserveerd met sauce mousseline (hollandaise verlucht met opgeslagen room). Bij voorkeur met een glas Riesling.',
+      seizoensgroenten: ['witte asperge', 'ei', 'boter', 'citroen', 'room'],
+      zones: ['continental'],
+    },
+    {
       naam: 'Soupe au pistou',
       herkomst: 'Provence',
       intro:
-        'De Provençaalse zomerklassieker: groentesoep met verse witte en groene bonen, courgette, tomaat, en een lepel pistou (basilicum, knoflook, olijfolie, parmezaan) er bovenop. Pure juni-oogst in een kom — werkt in heel Zuid- en Centraal-Frankrijk waar de eerste warme tomaten en jonge bonen tegelijk binnenkomen.',
-      seizoensgroenten: ['cocos blancs', 'haricots verts', 'courgette', 'tomaat', 'wortel', 'basilicum'],
-      zones: ['mediterraneen', 'oceanique_alt', 'continental'],
+        'De Provençaalse zomerklassieker: groentesoep met verse witte en groene bonen, courgette, tomaat, en een lepel pistou (basilicum, knoflook, olijfolie, parmezaan) er bovenop. Pure juni-oogst in een kom, geserveerd lauw of zelfs koud — bij hete dagen het lichtste warme gerecht dat denkbaar is.',
+      seizoensgroenten: ['cocos blancs', 'haricots verts', 'courgette', 'tomaat', 'wortel', 'basilicum', 'knoflook', 'olijfolie'],
+      zones: ['mediterraneen'],
+    },
+    {
+      naam: 'Salade savoyarde au reblochon',
+      herkomst: 'Savoie',
+      intro:
+        'Bergsla uit eigen tuin met blokjes warme reblochon, walnoten, krokant gebakken spek en een handvol verse aardbeien — de combinatie van bergkaas en het zomerfruit dat in de Alpen pas in juni doorbreekt. Vinaigrette van noten­olie en walnotenazijn. Eenvoudig, vullend, onmiskenbaar Savoie.',
+      seizoensgroenten: ['sla', 'reblochon', 'walnoot', 'aardbei', 'lardon', 'walnotenolie'],
+      zones: ['montagnard'],
     },
   ],
   afbeelding: {
