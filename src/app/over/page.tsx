@@ -40,7 +40,7 @@ export default function OverPagina() {
           en de jaarkalenders van <a href="https://www.kokopelli-semences.fr/" target="_blank" rel="noreferrer">Kokopelli</a>.
         </li>
         <li>
-          <strong>De moestuinserie van Infofrankrijk</strong> (Theo Sacourieu, 2015) als
+          <strong>De moestuinserie van Infofrankrijk</strong> (2015) als
           uitgangspunt, geüpdatet voor het huidige klimaat en de huidige wetgeving.
         </li>
       </ul>
