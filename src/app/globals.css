@@ -1,0 +1,218 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bordeaux: #800000;
+  --cream: #FBF8F3;
+  --ink: #1A1A1A;
+  --forest: #2D4A1F;
+  --sage: #8FA386;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-mulish), system-ui, sans-serif;
+    line-height: 1.8;
+    color: var(--ink);
+    background: var(--cream);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: var(--bordeaux);
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    color: var(--bordeaux);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    color: var(--bordeaux);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: var(--bordeaux);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: opacity 0.15s ease;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+@layer components {
+  /* Editorial section divider */
+  .section-rule {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(128, 0, 0, 0.3), transparent);
+    margin: 3rem 0;
+  }
+
+  /* Eyebrow label (small caps style) */
+  .eyebrow {
+    font-family: var(--font-poppins), sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--bordeaux);
+  }
+
+  /* Latin name styling — Cormorant italic */
+  .latin {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  /* Container widths */
+  .container-narrow {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .container-wide {
+    max-width: 76rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Card */
+  .card {
+    background: white;
+    border: 1px solid rgba(128, 0, 0, 0.08);
+    border-radius: 4px;
+    padding: 1.5rem;
+  }
+
+  /* Button */
+  .btn-primary {
+    display: inline-block;
+    background: var(--bordeaux);
+    color: white;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    font-family: var(--font-poppins), sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: background 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    background: rgba(128, 0, 0, 0.85);
+    opacity: 1;
+  }
+
+  /* Zone color chips */
+  .zone-chip {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+
+  /* Markdown-rendered prose (juridisch pages) */
+  .prose-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+  }
+  .prose-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+  }
+  .prose-content p {
+    margin-bottom: 1rem;
+  }
+  .prose-content ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .prose-content ul li {
+    margin-bottom: 0.35rem;
+  }
+  .prose-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0;
+    font-size: 0.95rem;
+  }
+  .prose-content thead {
+    background: rgba(128, 0, 0, 0.05);
+  }
+  .prose-content th,
+  .prose-content td {
+    border: 1px solid rgba(128, 0, 0, 0.12);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .prose-content th {
+    font-family: var(--font-poppins), sans-serif;
+    font-weight: 600;
+    color: var(--bordeaux);
+  }
+}
+
+/* MapLibre overrides */
+.maplibregl-canvas {
+  outline: none;
+}
+
+.maplibregl-popup-content {
+  font-family: var(--font-mulish), sans-serif !important;
+  padding: 0.75rem 1rem !important;
+  border-radius: 2px !important;
+}
+
+/* Print-friendly */
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
