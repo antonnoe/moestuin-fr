@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins, Mulish, Cormorant_Garamond } from 'next/font/google';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Shell from '@/components/Shell';
 import './globals.css';
 
 const poppins = Poppins({
@@ -42,9 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl" className={`${poppins.variable} ${mulish.variable} ${cormorant.variable}`}>
       <body className="bg-cream text-ink font-body antialiased">
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <Shell>{children}</Shell>
       </body>
     </html>
   );
