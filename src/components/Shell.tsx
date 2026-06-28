@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import Header from './Header';
 import Footer from './Footer';
 import EmbedResizer from './EmbedResizer';
+import MobileBridge from './MobileBridge';
 
 function ShellInner({ children }: { children: ReactNode }) {
   const search = useSearchParams();
@@ -15,6 +16,7 @@ function ShellInner({ children }: { children: ReactNode }) {
       {!embed && <Header />}
       <main className="min-h-screen">{children}</main>
       {!embed && <Footer />}
+      {!embed && <MobileBridge />}
       {embed && <EmbedResizer />}
     </>
   );

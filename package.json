@@ -10,10 +10,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "maplibre-gl": "4.7.1",
     "next": "15.3.9",
+    "qrcode.react": "^4.2.0",
     "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "maplibre-gl": "4.7.1"
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@types/node": "22.9.0",
