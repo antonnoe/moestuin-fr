@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container-wide mt-12 pt-6 border-t border-bordeaux-100 text-xs text-ink/60 flex flex-col sm:flex-row justify-between gap-2">
-        <span>© Communities Abroad — onderdeel van Infofrankrijk.com</span>
+        <span>© Communities Abroad — serviceorganisatie achter Infofrankrijk.com, Nederlanders.fr, Nedergids.nl, Café Claude (cafeclaude.fr) en SavoirFrance.fr</span>
         <span>Bronnen primair via .gouv.fr en Légifrance</span>
       </div>
     </footer>
