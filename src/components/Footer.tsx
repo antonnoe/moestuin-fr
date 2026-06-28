@@ -33,11 +33,13 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <div className="eyebrow mb-3">Onderdeel van</div>
+          <div className="eyebrow mb-3">Ga direct naar</div>
           <ul className="space-y-1">
             <li><a href="https://infofrankrijk.com" className="no-underline text-ink hover:text-bordeaux">Infofrankrijk.com</a></li>
             <li><a href="https://nederlanders.fr" className="no-underline text-ink hover:text-bordeaux">Nederlanders.fr</a></li>
-            <li><a href="https://cafeclaude.fr" className="no-underline text-ink hover:text-bordeaux">Café Claude</a></li>
+            <li><a href="https://nedergids.nl" className="no-underline text-ink hover:text-bordeaux">Nedergids.nl</a></li>
+            <li><a href="https://cafeclaude.fr" className="no-underline text-ink hover:text-bordeaux">Café Claude (cafeclaude.fr)</a></li>
+            <li><a href="https://savoirfrance.fr" className="no-underline text-ink hover:text-bordeaux">SavoirFrance.fr</a></li>
           </ul>
         </div>
         <div>

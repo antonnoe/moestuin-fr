@@ -50,7 +50,7 @@ export default function Home() {
       <section id="kaart" className="container-wide py-12">
         <div className="max-w-3xl mb-8">
           <div className="eyebrow mb-3">Stap 1 — Kies je klimaatzone</div>
-          <h2 className="!mt-0">Frankrijk is geen één land voor de tuinier</h2>
+          <h2 className="!mt-0">Frankrijk is niet één land voor de tuinier</h2>
           <p>
             Vijf klimaatzones, vijf kalenders. Klik op je departement op de kaart. Daarna wijst
             elke maandpagina je direct het werk dat bij <em>jouw</em> klimaat hoort.

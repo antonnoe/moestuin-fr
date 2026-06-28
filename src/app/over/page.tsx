@@ -20,8 +20,7 @@ export default function OverPagina() {
       </p>
       <p>
         Deze kalender is opgebouwd rond <strong>vijf klimaatzones</strong>, met voor elke maand
-        afzonderlijk advies. De indeling is een werkbare consensus, geen wetenschappelijke
-        Köppen-Geiger-kaart: hij volgt het ritme van het tuinieren, niet dat van de meteoroloog.
+        afzonderlijk advies.
       </p>
 
       <h2>Bronnen</h2>
