@@ -1,17 +1,26 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
     <footer className="border-t border-bordeaux-100 mt-24 py-12 bg-white/40">
       <div className="container-wide grid gap-8 sm:grid-cols-2 md:grid-cols-4 text-sm">
         <div>
-          <div className="eyebrow mb-3">Kalender</div>
-          <ul className="space-y-1">
-            <li><Link href="/maand/januari" className="no-underline text-ink hover:text-bordeaux">Januari</Link></li>
-            <li><Link href="/maand/april" className="no-underline text-ink hover:text-bordeaux">April</Link></li>
-            <li><Link href="/maand/juli" className="no-underline text-ink hover:text-bordeaux">Juli</Link></li>
-            <li><Link href="/maand/oktober" className="no-underline text-ink hover:text-bordeaux">Oktober</Link></li>
-          </ul>
+          <div className="eyebrow mb-3">De jaarcyclus</div>
+          <Link href="/" className="block group no-underline">
+            <div className="relative w-full aspect-square max-w-[160px] overflow-hidden rounded-sm border border-bordeaux/10 bg-cream transition-shadow group-hover:shadow-md">
+              <Image
+                src="/images/maandcyclus.png"
+                alt="De twaalfmaanden cyclus — open de interactieve kalender"
+                fill
+                sizes="160px"
+                className="object-cover transition-transform group-hover:scale-105"
+              />
+            </div>
+            <span className="block mt-2 text-ink/80 group-hover:text-bordeaux transition-colors">
+              Open de interactieve kalender →
+            </span>
+          </Link>
         </div>
         <div>
           <div className="eyebrow mb-3">Naslag</div>

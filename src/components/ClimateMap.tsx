@@ -48,6 +48,10 @@ export default function ClimateMap({ onZoneSelect, height = '500px' }: ClimateMa
       minZoom: 4,
       maxZoom: 8,
       attributionControl: false,
+      // Scroll-conflict oplossen: scrollwheel zoomt niet, pagina scrolt vrij door.
+      // cooperativeGestures toont op mobiel een hint dat twee vingers nodig zijn.
+      scrollZoom: false,
+      cooperativeGestures: true,
     });
 
     map.current.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
