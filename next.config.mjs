@@ -19,7 +19,7 @@ const nextConfig = {
           {
             key: 'Content-Security-Policy',
             value:
-              "frame-ancestors 'self' https://infofrankrijk.com https://www.infofrankrijk.com;",
+              "frame-ancestors 'self' https://infofrankrijk.com https://www.infofrankrijk.com https://infopoche.fr https://www.infopoche.fr;",
           },
         ],
       },
