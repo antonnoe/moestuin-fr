@@ -35,7 +35,12 @@ export function getMaandByNumber(num: number): Maand | undefined {
   return MAANDEN.find((m) => m.nummer === num);
 }
 
-export function getCurrentMaand(): Maand {
-  const num = new Date().getMonth() + 1;
-  return MAANDEN[num - 1];
+/**
+ * De maand van nu, in Franse tijd (Europe/Paris), niet in de tijd van de server. Wie dit vanaf een statische pagina
+ * aanroept krijgt de maand van het moment van bouwen: de startpagina zet daarom `revalidate`, zodat de pagina elk
+ * uur opnieuw wordt opgebouwd (3 november 2026: de knop zei nog "Start bij oktober", de site was op 21 oktober gebouwd).
+ */
+export function getCurrentMaand(nu: Date = new Date()): Maand {
+  const num = Number(new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', month: 'numeric' }).format(nu));
+  return MAANDEN[num - 1] ?? MAANDEN[nu.getMonth()];
 }

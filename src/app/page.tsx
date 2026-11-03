@@ -4,6 +4,10 @@ import YearCycle from '@/components/YearCycle';
 import { ZONES } from '@/data/zones';
 import { getCurrentMaand, MAANDEN } from '@/data/maanden';
 
+// De startpagina noemt de maand van nu ("Start bij november", het schijfje in de jaarcirkel). Zonder revalidate wordt
+// die maand bij het bouwen vastgezet en blijft hij staan tot de volgende deploy. Elk uur opnieuw opbouwen is ruim genoeg.
+export const revalidate = 3600;
+
 export default function Home() {
   const huidigeMaand = getCurrentMaand();
   const zoneKeys = Object.keys(ZONES) as Array<keyof typeof ZONES>;
