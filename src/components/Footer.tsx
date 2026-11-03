@@ -39,7 +39,6 @@ export default function Footer() {
             <li><a href="https://nederlanders.fr" className="no-underline text-ink hover:text-bordeaux">Nederlanders.fr</a></li>
             <li><a href="https://nedergids.nl" className="no-underline text-ink hover:text-bordeaux">Nedergids.nl</a></li>
             <li><a href="https://cafeclaude.fr" className="no-underline text-ink hover:text-bordeaux">Café Claude (cafeclaude.fr)</a></li>
-            <li><a href="https://savoirfrance.fr" className="no-underline text-ink hover:text-bordeaux">SavoirFrance.fr</a></li>
           </ul>
         </div>
         <div>
@@ -53,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container-wide mt-12 pt-6 border-t border-bordeaux-100 text-xs text-ink/60 flex flex-col sm:flex-row justify-between gap-2">
-        <span>© Communities Abroad — serviceorganisatie achter Infofrankrijk.com, Nederlanders.fr, Nedergids.nl, Café Claude (cafeclaude.fr) en SavoirFrance.fr</span>
+        <span>© Communities Abroad, serviceorganisatie achter Infofrankrijk.com, Nederlanders.fr, Nedergids.nl en Café Claude (cafeclaude.fr)</span>
         <span>Bronnen primair via .gouv.fr en Légifrance</span>
       </div>
     </footer>
